@@ -37,7 +37,7 @@ c. "dive", where a drone is approaching the observer orthogonally and diving to 
 
 1. Add wind turbulence noise at microphone.
 2. Add microphone noise floor.
-3. Compare and tune to live two-microphone drone recordings in wind conditions.
+3. Obtain live drone recordings in windy conditions.
 4. Add environmental noise (birds, aircraft).
 5. Add detection and classification: flyby / approach / dive (intended for edge deployment).  
    Augmentation parameters: wind speed and direction, noise level, distance, approach angle.
