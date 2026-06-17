@@ -1,6 +1,6 @@
 # drone-acoustic-analysis
 
-An acoustic simulation of a 4-blade quadcopter drone is created for a two-microphone observer.
+An acoustic simulation of a 4-blade quadcopter drone is created for a two-microphone observer.  
 Signal generation and acoustic propagation concepts are adapted from [1].
 
 ## Signal Characteristics
