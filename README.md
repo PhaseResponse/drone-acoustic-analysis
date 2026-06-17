@@ -19,9 +19,7 @@ The following is a spectrogram of the drone signal before propagating it through
 ## Acoustic Setup
 
 1. Two microphones are positioned 30 cm apart on the x-axis, facing forward (facing the y-axis).
-2. Three scenarios are simulated.
-
-Run the last 3 cells of the notebook to listen to the pre generated audio.
+2. Three scenarios are simulated.  Pre-generated audio files for each scenario are available in the sounds/ directory.
 
 a. "flyby", where a drone is flying laterally parallel to the observer at a constant height.
 
