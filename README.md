@@ -33,6 +33,8 @@ c. "dive", where a drone is approaching the observer orthogonally and diving to 
 
 ![dive spectrogram](images/spectrogram_dive.png)
 
+To view an interactive version with playable audio, open the notebook on [nbviewer](https://nbviewer.org/github/PhaseResponse/drone-acoustic-analysis/blob/main/drone_sound_simulation.ipynb)
+
 ## Upcoming features
 
 1. Add wind turbulence noise at microphone.
