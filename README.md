@@ -36,7 +36,7 @@ c. "dive", where a drone is approaching the observer orthogonally and diving to 
 ## Upcoming features
 
 1. Add wind turbulence noise at microphone.
-2. Simulate effect of foam windscreen on microphone frequency response.
+2. Add foam windscreen effect on microphone frequency response.
 3. Add microphone noise floor.
 4. Obtain live drone recordings in windy conditions.
 5. Add environmental noise (birds, aircraft).
