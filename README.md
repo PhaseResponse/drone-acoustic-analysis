@@ -5,7 +5,7 @@ Signal generation and acoustic propagation concepts are adapted from [1].
 
 ## Signal Characteristics
 
-1. The harmonic amplitudes are based on physical acoustic properties: exponentially decaying, while f and 2f are enhanced for mechanical imbalance, 4f is the loudest because it is the dominant blade passing frequency (BPF), and 8f is a secondary BPF harmonic.
+1. The harmonic amplitudes are based on physical acoustic properties: exponentially decaying, while f<sub>0</sub> and 2f<sub>0</sub> are enhanced for mechanical imbalance, 4f<sub>0</sub> is the loudest because it is the dominant blade passing frequency (BPF), and 8f<sub>0</sub> is a secondary BPF harmonic.
 2. The four motors are given slight RPM variation to create realistic beating.
 3. The phase per motor is given a uniformly random jitter.
 4. 1/f² broadband noise is added.
