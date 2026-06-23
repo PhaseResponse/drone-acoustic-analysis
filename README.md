@@ -12,7 +12,6 @@ Signal characteristics have been calibrated against live drone outdoor recording
 2. The four motors are given slight RPM variation to create realistic beating.
 3. The phase per motor is given a uniformly random jitter.
 4. 1/f² broadband noise is added for motor and aerodynamic noise.
-5. The signal is normalized to RMS = 1.0.
 
 The following is a spectrogram of the drone signal before propagation through the acoustic setup.
 
@@ -21,8 +20,8 @@ The following is a spectrogram of the drone signal before propagation through th
 ## Acoustic Setup
 
 1. Two microphones are positioned 30 cm apart on the x-axis, facing forward (facing the y-axis).
-2. Ground reflection is simulated by adding a scaled version of the signal.
-3. Wind turbulence at the microphone is simulated by 1/f³ black noise added to the propagated signal.
+2. Ground reflection is simulated by a mirrored source trajectory below ground (-z), scaled by the reflection coefficient.
+3. Wind-induced turbulence noise is simulated by independent 1/f³ noise added to each microphone's propagated signal.
 4. Three scenarios are simulated.  Audio files for each scenario are available in the `sounds/` directory.
 
 a. "flyby": a drone flies laterally parallel to the observer at a constant height.
