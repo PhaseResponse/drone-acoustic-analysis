@@ -7,7 +7,7 @@ Signal generation and acoustic propagation concepts are adapted from [1].
 
 Signal characteristics are calibrated against live drone outdoor recordings.
 
-1. Blade passing frequency (BPF) (N<sub>b</sub>·f<sub>0</sub>, 2·N<sub>b</sub>·f<sub>0</sub>, ...) are dominant.
+1. Blade passing frequency (BPF) harmonics (N<sub>b</sub>·f<sub>0</sub>, 2·N<sub>b</sub>·f<sub>0</sub>, ...) are dominant.
    Non-BPF harmonics are suppressed with exponential decay.
 2. The four motors are given slight RPM variation to create realistic beating.
 3. The phase per motor is given a uniformly random jitter.
