@@ -5,7 +5,7 @@ Signal generation and acoustic propagation concepts are adapted from [1].
 
 ## Signal Characteristics
 
-Signal characteristics have been calibrated against live drone outdoor recordings.
+Signal characteristics are calibrated against live drone outdoor recordings.
 
 1. Blade passing frequency (BPF) (N<sub>b</sub>·f<sub>0</sub>, 2·N<sub>b</sub>·f<sub>0</sub>, ...) are dominant.
    Non-BPF harmonics are suppressed with exponential decay.
