@@ -21,14 +21,14 @@ The following is a spectrogram of the drone signal before propagation through th
 
 1. Two microphones are positioned 30 cm apart on the x-axis, facing forward (facing the y-axis).
 2. Ground reflection is simulated by a mirrored source trajectory below ground (-z), scaled by the reflection coefficient.
-3. Wind-induced turbulence noise is simulated by independent 1/f³ noise added to each microphone's propagated signal.
+3. Wind-induced turbulence noise is simulated by independent 1/f² noise added to each microphone's propagated signal.
 4. Three scenarios are simulated.  Audio files for each scenario are available in the `sounds/` directory.
 
 a. "flyby": a drone flies laterally parallel to the observer at a constant height.
 
 <p>
   <img src="images/spectrogram_flyby_z20.png" width="49%">
-  <img src="images/spectrogram_flyby_z20_mic_turbulence_rms0.01.png" width="49%">
+  <img src="images/spectrogram_flyby_z20_brown_rms0.50.png" width="49%">
 </p>
 
 b. "approach": a drone approaches the observer orthogonally at a constant height.  
@@ -37,25 +37,27 @@ Flight altitude affects the steepness of the Doppler sweep.
 Altitude = 20 m
 <p>
   <img src="images/spectrogram_approach_z20.png" width="49%">
-  <img src="images/spectrogram_approach_z20_mic_turbulence_rms0.01.png" width="49%">
+  <img src="images/spectrogram_approach_z20_brown_rms0.05.png" width="49%">
 </p>
 
 Altitude = 5 m
 <p>
   <img src="images/spectrogram_approach_z5.png" width="49%">
-  <img src="images/spectrogram_approach_z5_mic_turbulence_rms0.01.png" width="49%">
+  <img src="images/spectrogram_approach_z5_brown_rms0.05.png" width="49%">
 </p>
 
 c. "dive": a drone approaches the observer orthogonally and dives to the ground at the observer's location. 
 
 <p>
   <img src="images/spectrogram_dive_z20.png" width="49%">
-  <img src="images/spectrogram_dive_z20_mic_turbulence_rms0.01.png" width="49%">
+  <img src="images/spectrogram_dive_z20_brown_rms0.05.png" width="49%">
 </p>
 
+<!--  
 To view an interactive version with playable audio, open the notebooks on nbviewer:
 - [Drone sound simulation](https://nbviewer.org/github/PhaseResponse/drone-acoustic-analysis/blob/main/drone_sound_simulation.ipynb)
 - [Microphone turbulence](https://nbviewer.org/github/PhaseResponse/drone-acoustic-analysis/blob/main/mic_turbulence.ipynb)
+-->
 
 ## Upcoming features
 
