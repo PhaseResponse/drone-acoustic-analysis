@@ -61,14 +61,14 @@ To view an interactive version with playable audio, open the notebooks on nbview
 
 ## Upcoming features
 
-1. Classical drone/no-drone detection for edge deployment.
+1. Classical detection (drone/no-drone) for edge deployment.
    - private dataset includes: drone, wind noise, voice, birds, dogs.
 2. Microphone modeling.
    - Obtain edge microphone recordings w/ and w/o foam windscreen.
    - Tune microphone wind noise model with recordings.
 3. Trajectory modeling.
    - Model drone stabilization motion pattern from recordings.
-4. Classical / ML-based: Detection (drone/no-drone) and classification (flyby/approach/dive).
+4. ML-based classification (flyby/approach/dive).
    - Augmentation: microphone wind noise, drone physical and trajectory parameters, additional noise sources.
 
 ## References
