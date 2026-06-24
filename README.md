@@ -62,7 +62,7 @@ To view an interactive version with playable audio, open the notebooks on nbview
 ## Upcoming features
 
 1. Classical detection (drone/no-drone) for edge deployment.
-   - private dataset includes: drone, wind noise, voice, birds, dogs.
+   - private dataset includes: drones, wind noise, voice, birds, dogs.
 2. Microphone modeling.
    - Obtain edge microphone recordings w/ and w/o foam windscreen.
    - Tune microphone wind noise model with recordings.
