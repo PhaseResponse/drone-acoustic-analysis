@@ -37,20 +37,20 @@ Flight altitude affects the steepness of the Doppler sweep.
 Altitude = 20 m
 <p>
   <img src="images/spectrogram_approach_z20.png" width="49%">
-  <img src="images/spectrogram_approach_z20_brown_rms0.05.png" width="49%">
+  <img src="images/spectrogram_approach_z20_brown_rms0.50.png" width="49%">
 </p>
 
 Altitude = 5 m
 <p>
   <img src="images/spectrogram_approach_z5.png" width="49%">
-  <img src="images/spectrogram_approach_z5_brown_rms0.05.png" width="49%">
+  <img src="images/spectrogram_approach_z5_brown_rms0.50.png" width="49%">
 </p>
 
 c. "dive": a drone approaches the observer orthogonally and dives to the ground at the observer's location. 
 
 <p>
   <img src="images/spectrogram_dive_z20.png" width="49%">
-  <img src="images/spectrogram_dive_z20_brown_rms0.05.png" width="49%">
+  <img src="images/spectrogram_dive_z20_brown_rms0.50.png" width="49%">
 </p>
 
 <!--  
