@@ -62,10 +62,10 @@ To view an interactive version with playable audio, open the notebooks on nbview
 ## Upcoming features
 
 Detection (drone/no-drone) for edge deployment.
-1. Batear algorithm [2] as benchmark.
+1. Batear algorithm as benchmark [2].
 2. ML-based classification. Augmentation: Microphone wind noise, drone physical and trajectory parameters, additional noise sources.
 
 ## References
-[1] Herold G. Drone auralization example. Acoular Blog. 2024 Sep 21. https://blog.acoular.org/posts/auralization/drone-auralization-example.html
+[1] Herold G. Drone auralization example. Acoular Blog. 2024 Sep 21. https://blog.acoular.org/posts/auralization/drone-auralization-example.html  
 [2] Batear by TN, founder of batear.io: https://github.com/batear-io/batear
  
