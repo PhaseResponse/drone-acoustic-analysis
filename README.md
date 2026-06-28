@@ -61,16 +61,11 @@ To view an interactive version with playable audio, open the notebooks on nbview
 
 ## Upcoming features
 
-1. Classical detection (drone/no-drone) for edge deployment.
-   - private dataset includes: drones, wind noise, voice, birds, dogs.
-2. Microphone modeling.
-   - Obtain edge microphone recordings w/ and w/o foam windscreen.
-   - Tune microphone wind noise model with recordings.
-3. Trajectory modeling.
-   - Model drone stabilization motion pattern from recordings.
-4. ML-based classification (flyby/approach/dive).
-   - Augmentation: microphone wind noise, drone physical and trajectory parameters, additional noise sources.
+Detection (drone/no-drone) for edge deployment.
+1. Batear algorithm [2] as benchmark.
+2. ML-based classification. Augmentation: Microphone wind noise, drone physical and trajectory parameters, additional noise sources.
 
 ## References
 [1] Herold G. Drone auralization example. Acoular Blog. 2024 Sep 21. https://blog.acoular.org/posts/auralization/drone-auralization-example.html
-
+[2] Batear by TN, founder of batear.io: https://github.com/batear-io/batear
+ 
