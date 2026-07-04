@@ -59,11 +59,15 @@ To view an interactive version with playable audio, open the notebooks on nbview
 - [Microphone turbulence](https://nbviewer.org/github/PhaseResponse/drone-acoustic-analysis/blob/main/mic_turbulence.ipynb)
 -->
 
+## Classification
+
+The batear algorithm is used as a benchmark [2].  The PR curve displays an unbalanced dataset.  The f1-score of 0.62 at the operational threshold 0.3 reflects missed detections. Pending addition of non-drone recordings with target hardware.
+
+<img src="images/batear_jun16_pr_curve.png" width="49%">
+
 ## Upcoming features
 
-Detection (drone/no-drone) for edge deployment.
-1. Batear algorithm as benchmark [2].
-2. ML-based classification. Augmentation: Microphone wind noise, drone physical and trajectory parameters, additional noise sources.
+ML-based classification. Augmentation: Microphone wind noise, drone physical and trajectory parameters, additional noise sources.
 
 ## References
 [1] Herold G. Drone auralization example. Acoular Blog. 2024 Sep 21. https://blog.acoular.org/posts/auralization/drone-auralization-example.html  
