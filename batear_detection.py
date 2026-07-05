@@ -24,8 +24,8 @@ CLEAR_FRAMES      = 8       # consecutive negatives to clear alarm
 RMS_MIN           = 0.0004  # minimum RMS to process frame
 
 HARM_PEAK_MIN_SNR = 4.0    # minimum SNR for fundamental
-HARM_MIN_H2       = 0.035 #0.07   # minimum h2/fundamental ratio
-HARM_MIN_H3       = 0.0175 #0.035  # minimum h3/fundamental ratio
+HARM_MIN_H2       = 0.07   # minimum h2/fundamental ratio
+HARM_MIN_H3       = 0.035  # minimum h3/fundamental ratio
 HARM_BIN_TOL      = 2      # ±bins tolerance for harmonic search
 
 # for plotting results
