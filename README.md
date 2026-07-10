@@ -61,9 +61,9 @@ To view an interactive version with playable audio, open the notebooks on nbview
 
 ## Classification
 
-Batear algorithm is used as benchmark [2].  PR curve displays an unbalanced dataset.  f1-score of 0.61 at the operational threshold 0.3 reflects missed detections. Pending addition of no-drone recordings with target hardware.
+Batear algorithm is used as benchmark [2].  PR curve displays a realistic drone:no-drone ratio.  f1-score of 0.13 at the operational threshold 0.3, and mAP=0.15, reflect Batear's limitations on detecting drones with fast RPM variations, and false alarms on non-drone sounds with constant harmonics. 
 
-<img src="images/batear_jun16_pr_curve.png" width="49%">
+<img src="images/batear_v2field_pr_curve.png" width="49%">
 
 ## Upcoming features
 
