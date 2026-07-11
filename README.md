@@ -62,7 +62,7 @@ To view an interactive version with playable audio, open the notebooks on nbview
 ## Classification
 
 Batear algorithm is used as benchmark [2].  
-PR curve, realistic drone:no-drone ratio, mixed recording conditions.
+PR curve, realistic drone:no-drone ratio, mixed recording conditions. No-drone: field recordings.
 
 <img src="images/batear_v2field_pr_curve.png" width="49%">
 
