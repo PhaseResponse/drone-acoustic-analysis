@@ -61,18 +61,10 @@ To view an interactive version with playable audio, open the notebooks on nbview
 
 ## Classification
 
-Batear algorithm is used as benchmark [2].  
-PR curve, realistic drone:no-drone ratio, mixed recording conditions. No-drone: field recordings.
+Batear algorithm is used as benchmark [2].    
+PR curve shows that edge-optimized CNN mAP is similar to Batear mAP.  Quantization cuts memory by half.  "Tiny" (depthwise separable convolutions) model f1-score slightly lower than conventional convolutions model.  CNN results expected to improve with additional application-specific Target HW data.
 
-<img src="images/batear_v2field_pr_curve.png" width="49%">
-
-PR curve on target hardware recordings.
-
-<img src="images/batear_Target_HW_pr_curve.png" width="49%">
-
-## Upcoming features
-
-ML-based classification. Augmentation: Microphone wind noise, drone physical and trajectory parameters, additional noise sources.
+<img src="images/pr_curve_batear_CNN_Tiny_quant.png" width="49%">
 
 ## References
 [1] Herold G. Drone auralization example. Acoular Blog. 2024 Sep 21. https://blog.acoular.org/posts/auralization/drone-auralization-example.html  
