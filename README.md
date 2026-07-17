@@ -75,7 +75,7 @@ PR curves show that edge-optimized CNN mAP is comparable to Batear mAP.  Quanti
 | CNN (quantized)       | 2.04                 | 4.57        |
 | TinyCNN   (quantized) | 1.65                 | 5.57        |  
 
-_CNN timing includes spectrogram computation.  Timing measured on CPU._
+_CNN timing includes spectrogram computation.  Timing measured on CPU._  
 _Memory estimated by torchinfo._
 
 ## References
