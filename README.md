@@ -65,7 +65,7 @@ To view an interactive version with playable audio, open the notebooks on nbview
 Batear algorithm is used as benchmark [2].  
 PR curves show that edge-optimized CNN mAP is comparable to Batear mAP.  Quantization cuts memory in half, yet does not change the PR curve.  Conventional CNN f1-score slightly higher than "Tiny" model (depthwise separable convolutions), and significantly higher than Batear with default threshold.  CNN results expected to improve with additional application-specific Target HW data.  
 
-<img src="images/pr_curve_batear_CNN_Tiny_quant.png" width="49%">
+<img src="images/pr_curve_batear_CNN_Tiny_quant.png" width="70%">
 
 ## References
 [1] Herold G. Drone auralization example. Acoular Blog. 2024 Sep 21. https://blog.acoular.org/posts/auralization/drone-auralization-example.html  
