@@ -69,13 +69,14 @@ PR curves show that edge-optimized CNN mAP is comparable to Batear mAP.  Quanti
 
 &nbsp;
 
-| Model                 | Inference + spectrogram (ms) | Memory (MB) |
-|-----------------------|------------------------------|-------------|
-| Batear                | 0.85                         |   -         |
-| CNN (quantized)       | 2.04                         | 4.57        |
-| TinyCNN   (quantized) | 1.65                         | 5.57        |  
+| Model                 | Processing time (ms) | Memory (MB) |
+|-----------------------|----------------------|-------------|
+| Batear                | 0.85                 |   -         |
+| CNN (quantized)       | 2.04                 | 4.57        |
+| TinyCNN   (quantized) | 1.65                 | 5.57        |  
 
-_Timing measured on CPU. Memory estimated by torchinfo._
+_CNN timing includes spectrogram computation.  Timing measured on CPU._
+_Memory estimated by torchinfo._
 
 ## References
 [1] Herold G. Drone auralization example. Acoular Blog. 2024 Sep 21. https://blog.acoular.org/posts/auralization/drone-auralization-example.html  
