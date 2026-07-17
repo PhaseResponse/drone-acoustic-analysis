@@ -4,12 +4,15 @@ Acoustic drone detector — Python reimplementation of Batear algorithm [2].
 
 import numpy as np
 from scipy.io import wavfile
-from audio_utils import N_SEGMENT_OVERLAP, N_FRAMES
 
 # --- constants  ---
+N_FRAMES          = 16        # frames per segment
+N_SEGMENT_OVERLAP = 8         # frames overlapping previous segment, for EMA initial conditions
+
 # batear defaults
-SAMPLE_RATE       = 16000
-FFT_SIZE          = 1024
+FFT_SIZE          = 1024      # fft window size [samples]     
+SAMPLE_RATE       = 16000     # [Hz]
+
 BIN_HZ            = SAMPLE_RATE / FFT_SIZE          # 15.625 Hz/bin
 N_BINS_HALF       = FFT_SIZE // 2 + 1               # 513
 

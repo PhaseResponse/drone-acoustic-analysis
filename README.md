@@ -1,7 +1,8 @@
 # drone-acoustic-analysis
 
 An acoustic simulation of a 3-blade or 4-blade quadcopter drone is created for a two-microphone observer. 
-Signal generation and acoustic propagation concepts are adapted from [1].
+Signal generation and acoustic propagation concepts are adapted from [1].  
+A drone/no-drone classifier is developed for Edge hardware.  
 
 ## Signal Characteristics
 
@@ -61,8 +62,8 @@ To view an interactive version with playable audio, open the notebooks on nbview
 
 ## Classification
 
-Batear algorithm is used as benchmark [2].    
-PR curve shows that edge-optimized CNN mAP is similar to Batear mAP.  Quantization cuts memory by half.  "Tiny" (depthwise separable convolutions) model f1-score slightly lower than conventional convolutions model.  CNN results expected to improve with additional application-specific Target HW data.
+Batear algorithm is used as benchmark [2].  
+PR curves show that edge-optimized CNN mAP is comparable to Batear mAP.  Quantization cuts memory in half, yet does not change the PR curve.  Conventional CNN f1-score slightly higher than "Tiny" model (depthwise separable convolutions), and significantly higher than Batear with default threshold.  CNN results expected to improve with additional application-specific Target HW data.  
 
 <img src="images/pr_curve_batear_CNN_Tiny_quant.png" width="49%">
 

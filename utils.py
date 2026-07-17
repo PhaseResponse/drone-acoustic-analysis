@@ -1,12 +1,8 @@
 # utils.py
 import os
 
-import numpy as np
 import matplotlib.pyplot as plt
-import soundfile as sf
 from IPython.display import display
-from IPython.display import Audio
-from IPython.display import HTML
 
 
 # Spectrogram parameters
