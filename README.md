@@ -2,7 +2,7 @@
 
 An acoustic simulation of a 3-blade or 4-blade quadcopter drone is created for a two-microphone observer. 
 Signal generation and acoustic propagation concepts are adapted from [1].  
-A drone/no-drone classifier is developed for Edge hardware.  
+A drone/no-drone classifier is developed for edge hardware.  
 
 ## Signal Characteristics
 
