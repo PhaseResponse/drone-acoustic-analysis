@@ -63,17 +63,17 @@ To view an interactive version with playable audio, open the notebooks on nbview
 ## Classification
 
 Batear algorithm is used as benchmark [2].  
-PR curves show that edge-optimized CNN mAP is comparable to Batear mAP.  Quantization cuts memory in half, yet does not change the PR curve.  Conventional CNN f1-score slightly higher than "Tiny" model (depthwise separable convolutions), and significantly higher than Batear with default threshold.  CNN results expected to improve with additional application-specific Target HW data.  
+PR curves show that edge-optimized CNN mAP is comparable to Batear mAP.  f1-score is significantly higher than Batear with default thresholds.  Quantization cuts memory in half, while not affecting the PR curve.   CNN results expected to improve with additional application-specific target HW data.
 
-<img src="images/pr_curve_batear_CNN_Tiny_quant.png" width="70%">
+<img src="images/pr_curve_batear_CNN_Tiny_quant_IV.png" width="70%">
 
 &nbsp;
 
-| Model                 | Processing time (ms) | Memory (MB) |
-|-----------------------|----------------------|-------------|
-| Batear                | 0.85                 |   -         |
-| CNN (quantized)       | 2.04                 | 4.57        |
-| TinyCNN   (quantized) | 1.65                 | 5.57        |  
+| Model                                | Processing time (ms) | Memory (MB) |
+|--------------------------------------|----------------------|-------------|
+| Batear                               | 0.85                 |   -         |
+| CNN (quantized)                      | 2.04                 | 4.57        |
+| CNN (depthwise separable, quantized) | 1.65                 | 5.57        |  
 
 _CNN timing includes spectrogram computation.  Timing measured on CPU._  
 _Memory estimated by torchinfo._
