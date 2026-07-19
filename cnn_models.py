@@ -69,7 +69,7 @@ class SpectrogramDataset(Dataset):
 
 
 def train(model, loader, epochs=10, lr=1e-3, start_epoch=0): 
-    """Train model. Saves best_model.pt and checkpoint.pt after each epoch."""    
+    """Train model. After each epoch, saves model for inference and checkpoint for continued training."""    
     device = torch.device('mps' if torch.backends.mps.is_available() else 'cpu')
     print(f"using device: {device}")
     model = model.to(device)
