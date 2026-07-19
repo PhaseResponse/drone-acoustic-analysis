@@ -27,7 +27,7 @@ class SimpleCNN(nn.Module):
 
 
 class DepthwiseSeparableCNN(nn.Module):
-    """Lightweight binary classifier using depthwise separable convolutions for edge deployment."""    
+    """Binary classifier using depthwise separable convolutions."""    
     def __init__(self, input_shape):
         super().__init__()
         self.net = nn.Sequential(
@@ -48,7 +48,7 @@ class DepthwiseSeparableCNN(nn.Module):
 
 
 def quantize_model(model):
-    """Quantize model weights to int8 for reduced memory and faster inference on edge hardware."""    
+    """Quantize model weights to int8 for reduced memory."""    
     torch.backends.quantized.engine = 'qnnpack'
     return torch.quantization.quantize_dynamic(model, {nn.Linear, nn.Conv2d}, dtype=torch.qint8)
 
@@ -69,7 +69,7 @@ class SpectrogramDataset(Dataset):
 
 
 def train(model, loader, epochs=10, lr=1e-3, start_epoch=0): 
-    """Train model with BCEWithLogitsLoss. Saves best_model.pt and checkpoint.pt after each epoch."""    
+    """Train model. Saves best_model.pt and checkpoint.pt after each epoch."""    
     device = torch.device('mps' if torch.backends.mps.is_available() else 'cpu')
     print(f"using device: {device}")
     model = model.to(device)
