@@ -78,6 +78,13 @@ PR curves show that edge-optimized CNN mAP is comparable to Batear mAP.  f1-scor
 _CNN timing includes spectrogram computation.  Timing measured on CPU._  
 _Memory estimated by torchinfo._
 
+## Todo
+
+1. Train CNN on augmented field recordings (RPM, SNR).
+2. RPM modulation for drone maneuver signatures.
+3. Train CNN on synthesized data.
+4. Multi-microphone array for directional detection and SNR improvement.
+
 ## References
 [1] Herold G. Drone auralization example. Acoular Blog. 2024 Sep 21. https://blog.acoular.org/posts/auralization/drone-auralization-example.html  
 [2] Batear by TN, founder of batear.io: https://github.com/batear-io/batear
