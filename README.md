@@ -78,7 +78,7 @@ PR curves show that edge-optimized CNN mAP is comparable to Batear mAP.  f1-scor
 _CNN timing includes spectrogram computation.  Timing measured on CPU._  
 _Memory estimated by torchinfo._
 
-## Todo
+## Upcoming 
 
 1. Train CNN on augmented field recordings (RPM, SNR).
 2. RPM modulation for drone maneuver signatures.
