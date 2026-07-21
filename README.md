@@ -81,7 +81,7 @@ _Memory estimated by torchinfo._
 ## Upcoming 
 
 1. Train CNN on augmented field recordings (RPM, SNR).
-2. RPM modulation for drone maneuver signatures.
+2. Synthesize RPM modulation for drone maneuver signatures.
 3. Train CNN on synthesized data.
 4. Multi-microphone array for directional detection and SNR improvement.
 
