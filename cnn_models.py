@@ -65,16 +65,18 @@ class SpectrogramDataset(Dataset):
         spec, label = self.segments[idx]
         x = torch.tensor(spec).unsqueeze(0)  # (1, freq, time)
         y = torch.tensor(label, dtype=torch.float32)
+        device = torch.device('mps' if torch.backends.mps.is_available() else 'cpu')
         return x, y    
 
 
-def train(model, loader, epochs=10, lr=1e-3, start_epoch=0): 
+def train(model, loader, epochs=10, lr=1e-3, start_epoch=0, pos_weight=torch.tensor([1.0])): 
     """Train model. After each epoch, saves model for inference and checkpoint for continued training."""    
     device = torch.device('mps' if torch.backends.mps.is_available() else 'cpu')
     print(f"using device: {device}")
     model = model.to(device)
     optimizer = optim.Adam(model.parameters(), lr=lr)
-    criterion = nn.BCEWithLogitsLoss()
+    criterion = nn.BCEWithLogitsLoss(pos_weight=pos_weight.to(device))
+    print(f'pos_weight={pos_weight.item():.2f}')
     for epoch in range(start_epoch, epochs):
         t0 = time.time()
         model.train()
