@@ -80,9 +80,10 @@ _Memory estimated by torchinfo._
 
 ## Upcoming 
 
-Train CNN on augmented field recordings (RPM, SNR).
+Train CNN on augmented field recordings (RPM, SNR) [3].
 
 ## References
 [1] Herold G. Drone auralization example. Acoular Blog. 2024 Sep 21. https://blog.acoular.org/posts/auralization/drone-auralization-example.html  
-[2] Batear by TN, founder of batear.io: https://github.com/batear-io/batear
- 
+[2] Batear by TN, founder of batear.io: https://github.com/batear-io/batear  
+[3] Private conversation.
+
