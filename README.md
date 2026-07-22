@@ -80,10 +80,7 @@ _Memory estimated by torchinfo._
 
 ## Upcoming 
 
-1. Train CNN on augmented field recordings (RPM, SNR).
-2. Synthesize RPM modulation for drone maneuver signatures.
-3. Train CNN on synthesized data.
-4. Multi-microphone array for directional detection and SNR improvement.
+Train CNN on augmented field recordings (RPM, SNR).
 
 ## References
 [1] Herold G. Drone auralization example. Acoular Blog. 2024 Sep 21. https://blog.acoular.org/posts/auralization/drone-auralization-example.html  
