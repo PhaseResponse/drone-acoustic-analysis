@@ -78,7 +78,7 @@ CNN results may shift with additional application-specific target HW data and sc
 
 &nbsp;
 
-TFLite conversion reduces model size by ~8x versus the Pytorch float model <sup>*</sup>.   
+TFLite conversion reduces model size by ~8x compared to the Pytorch float model <sup>*</sup>.   
 
 | Model                   | Processing time      | Memory      |
 |-------------------------|----------------------|-------------|
