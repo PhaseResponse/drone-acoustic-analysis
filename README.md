@@ -69,9 +69,9 @@ c. "dive": a drone approaches the observer orthogonally and dives to the ground 
 
 Batear algorithm is used as benchmark [2]. 
  
-PR curves show that CNN mAP (0.99) substantially outperforms Batear (mAP 0.45) on the same 4-channel test set.   
+PR curves show that CNN mAP 0.99 substantially outperforms Batear mAP 0.45 on the same 4-channel test set.   
 f1-score is significantly higher than Batear, although Batear is evaluated at default threshold while the CNN threshold is tuned on validation set.  
-The fused 4-mic input to the CNN raises mAP by ~0.60 (from a mean of ~0.39 across individual channels to 0.99).  
+The fused 4-mic input to the CNN raises mAP by ~0.60, from a mean of ~0.39 across individual channels to 0.99.  
 CNN results may shift with additional application-specific target HW data and scenarios.  
  
 <img src="images/pr_curve_4ch.png" width="70%">
