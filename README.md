@@ -8,9 +8,10 @@ Signal generation and acoustic propagation concepts are adapted from [1].
           ●
          /|\
         / | \
-       /  |  \
-      ●   ●   ●
-  (vertex + 3 base mics, synchronized and equally spaced)
+       ●  |  ●
+          ●
+
+   Vertex + 3 base mics, synchronized and equally spaced.
 
   [4-mic] --> [Spectrogram] --> [CNN] --> drone / no-drone
 ```
