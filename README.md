@@ -1,20 +1,7 @@
 # drone-acoustic-analysis
 
-1. An acoustic simulation of a 3-blade or 4-blade quadcopter drone is created for a two-microphone observer. 
+An acoustic simulation of a 3-blade or 4-blade quadcopter drone is created for a two-microphone observer. 
 Signal generation and acoustic propagation concepts are adapted from [1].  
-2. A drone/no-drone CNN-based classifier is developed for edge hardware. The input to the spectrogram is the combined output of a 4-mic tetrahedral array. 
-
-```
-          ●
-         /|\
-        / | \
-       ●  |  ●
-          ●
-
-   Vertex + 3 base mics, synchronized and equally spaced.
-
-  [4-mic] --> [Spectrogram] --> [CNN] --> drone / no-drone
-```
 
 ## Signal Characteristics
 
@@ -66,34 +53,7 @@ c. "dive": a drone approaches the observer orthogonally and dives to the ground 
   <img src="images/spectrogram_dive_z20_brown_rms0.50.png" width="49%">
 </p>
 
-## Classification
-
-Batear algorithm is used as benchmark [2]. 
- 
-PR curves show that CNN mAP 0.99 substantially outperforms Batear mAP 0.45 on the same 4-channel test set.   
-CNN f1-score is significantly higher than Batear, although Batear is evaluated at default threshold while the CNN threshold is tuned on validation set.  
-The fused 4-mic input to the CNN raises mAP by ~0.60, from a mean of ~0.39 across individual channels to 0.99.  
-CNN results may shift with additional application-specific target HW data and scenarios.  
- 
-<img src="images/pr_curve_4ch.png" width="70%">
-
-&nbsp;
-
-TFLite conversion reduces model size by ~8x compared to the Pytorch float model <sup>*</sup>.   
-
-| Model                   | Processing time      | Memory      |
-|-------------------------|----------------------|-------------|
-| Batear                  | 0.85 ms              |   -         |
-| CNN (pytorch float)     | 1.38 ms              | 3.35 MB     |
-| CNN (pytorch quantized) | 1.37 ms              | 1.77 MB     |
-| CNN (TFLite)            |  -                   |  424 KB     |
-
-_CNN timing includes spectrogram computation.  Timing measured on CPU._  
-_<sup>*</sup> Pytorch model memory estimated by torchinfo, includes model weights, input tensor, and forward-pass activations._ 
-
-
 ## References
 [1] Herold G. Drone auralization example. Acoular Blog. 2024 Sep 21.  
 https://blog.acoular.org/posts/auralization/drone-auralization-example.html    
-[2] Batear by TN, founder of batear.io: https://github.com/batear-io/batear    
 
